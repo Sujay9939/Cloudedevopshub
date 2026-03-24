@@ -1,0 +1,492 @@
+Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.17.0-1009-gcp x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+ System information as of Tue Mar 24 13:31:31 UTC 2026
+
+  System load:  0.02              Processes:             115
+  Usage of /:   34.1% of 8.65GB   Users logged in:       0
+  Memory usage: 9%                IPv4 address for ens4: 10.128.0.38
+  Swap usage:   0%
+
+Expanded Security Maintenance for Applications is not enabled.
+
+20 updates can be applied immediately.
+19 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+Enable ESM Apps to receive additional future security updates.
+See https://ubuntu.com/esm or run: sudo pro status
+
+
+
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+gope_sujay357@first-vm:~$ pwd
+/home/gope_sujay357
+gope_sujay357@first-vm:~$ sudo -i
+root@first-vm:~# ls
+root@first-vm:~# cd ..
+root@first-vm:/# ls
+bin                etc                lib64       opt   sbin                sys
+bin.usr-is-merged  home               lost+found  proc  sbin.usr-is-merged  tmp
+boot               lib                media       root  snap                usr
+dev                lib.usr-is-merged  mnt         run   srv                 var
+root@first-vm:/# cd /
+root@first-vm:/# cd /var
+root@first-vm:/var# pwd
+/var
+root@first-vm:/var# ls
+backups  cache  crash  lib  local  lock  log  mail  opt  run  snap  spool  tmp
+root@first-vm:/var# cd log
+root@first-vm:/var/log# ls
+README                 cloud-init.log          lastlog
+alternatives.log       dist-upgrade            private
+apport.log             dmesg                   syslog
+apt                    dpkg.log                sysstat
+auth.log               google-cloud-ops-agent  unattended-upgrades
+btmp                   journal                 wtmp
+chrony                 kern.log
+cloud-init-output.log  landscape
+root@first-vm:/var/log# cd auth.log
+-bash: cd: auth.log: Not a directory
+root@first-vm:/var/log# cat auth.log
+2026-03-24T13:16:36.612976+00:00 first-vm useradd[643]: new group: name=ubuntu, GID=1000
+2026-03-24T13:16:36.612982+00:00 first-vm useradd[643]: new user: name=ubuntu, UID=1000, GID=1000, home=/home/ubuntu, shell=/bin/bash, from=none
+2026-03-24T13:16:36.612988+00:00 first-vm useradd[643]: add 'ubuntu' to group 'adm'
+2026-03-24T13:16:36.612993+00:00 first-vm useradd[643]: add 'ubuntu' to group 'cdrom'
+2026-03-24T13:16:36.612999+00:00 first-vm useradd[643]: add 'ubuntu' to group 'sudo'
+2026-03-24T13:16:36.613044+00:00 first-vm useradd[643]: add 'ubuntu' to group 'dip'
+2026-03-24T13:16:36.624425+00:00 first-vm useradd[643]: add 'ubuntu' to group 'lxd'
+2026-03-24T13:16:36.624438+00:00 first-vm useradd[643]: add 'ubuntu' to shadow group 'adm'
+2026-03-24T13:16:36.624445+00:00 first-vm useradd[643]: add 'ubuntu' to shadow group 'cdrom'
+2026-03-24T13:16:36.624451+00:00 first-vm useradd[643]: add 'ubuntu' to shadow group 'sudo'
+2026-03-24T13:16:36.624458+00:00 first-vm useradd[643]: add 'ubuntu' to shadow group 'dip'
+2026-03-24T13:16:36.624464+00:00 first-vm useradd[643]: add 'ubuntu' to shadow group 'lxd'
+2026-03-24T13:16:36.624487+00:00 first-vm passwd[651]: password for 'ubuntu' changed by 'root'
+2026-03-24T13:16:36.625562+00:00 first-vm systemd-logind[694]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-03-24T13:16:36.625577+00:00 first-vm systemd-logind[694]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-03-24T13:16:36.625583+00:00 first-vm systemd-logind[694]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-03-24T13:16:36.625596+00:00 first-vm systemd-logind[694]: New seat seat0.
+2026-03-24T13:16:42.702407+00:00 first-vm polkitd[972]: Loading rules from directory /etc/polkit-1/rules.d
+2026-03-24T13:16:42.706097+00:00 first-vm polkitd[972]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-03-24T13:16:42.713785+00:00 first-vm polkitd[972]: Finished loading, compiling and executing 4 rules
+2026-03-24T13:16:42.715933+00:00 first-vm polkitd[972]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-03-24T13:16:43.103514+00:00 first-vm systemd-logind[1067]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-03-24T13:16:43.103619+00:00 first-vm systemd-logind[1067]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-03-24T13:16:43.103700+00:00 first-vm systemd-logind[1067]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-03-24T13:16:43.103746+00:00 first-vm systemd-logind[1067]: New seat seat0.
+2026-03-24T13:16:43.285631+00:00 first-vm sshd[1083]: Server listening on 0.0.0.0 port 22.
+2026-03-24T13:16:43.286228+00:00 first-vm sshd[1083]: Server listening on :: port 22.
+2026-03-24T13:17:01.201268+00:00 first-vm CRON[1439]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-24T13:17:01.209003+00:00 first-vm CRON[1439]: pam_unix(cron:session): session closed for user root
+2026-03-24T13:21:51.026293+00:00 first-vm groupadd[2099]: group added to /etc/group: name=google-sudoers, GID=1001
+2026-03-24T13:21:51.032957+00:00 first-vm groupadd[2099]: group added to /etc/gshadow: name=google-sudoers
+2026-03-24T13:21:51.034765+00:00 first-vm groupadd[2099]: new group: name=google-sudoers, GID=1001
+2026-03-24T13:21:51.059513+00:00 first-vm useradd[2105]: new group: name=gope_sujay357, GID=1002
+2026-03-24T13:21:51.059728+00:00 first-vm useradd[2105]: new user: name=gope_sujay357, UID=1001, GID=1002, home=/home/gope_sujay357, shell=/bin/bash, from=none
+2026-03-24T13:21:51.125943+00:00 first-vm gpasswd[2113]: user gope_sujay357 added by root to group ubuntu
+2026-03-24T13:21:51.151510+00:00 first-vm gpasswd[2119]: user gope_sujay357 added by root to group adm
+2026-03-24T13:21:51.175952+00:00 first-vm gpasswd[2125]: user gope_sujay357 added by root to group dialout
+2026-03-24T13:21:51.202241+00:00 first-vm gpasswd[2131]: user gope_sujay357 added by root to group cdrom
+2026-03-24T13:21:51.225889+00:00 first-vm gpasswd[2137]: user gope_sujay357 added by root to group floppy
+2026-03-24T13:21:51.252253+00:00 first-vm gpasswd[2143]: user gope_sujay357 added by root to group audio
+2026-03-24T13:21:51.274229+00:00 first-vm gpasswd[2149]: user gope_sujay357 added by root to group dip
+2026-03-24T13:21:51.295530+00:00 first-vm gpasswd[2155]: user gope_sujay357 added by root to group video
+2026-03-24T13:21:51.316980+00:00 first-vm gpasswd[2161]: user gope_sujay357 added by root to group plugdev
+2026-03-24T13:21:51.343155+00:00 first-vm gpasswd[2167]: user gope_sujay357 added by root to group netdev
+2026-03-24T13:21:51.365242+00:00 first-vm gpasswd[2173]: user gope_sujay357 added by root to group lxd
+2026-03-24T13:21:51.387142+00:00 first-vm gpasswd[2179]: user gope_sujay357 added by root to group google-sudoers
+2026-03-24T13:24:57.363202+00:00 first-vm gpasswd[2200]: user gope_sujay357 removed by root from group google-sudoers
+2026-03-24T13:25:01.215944+00:00 first-vm CRON[2210]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-03-24T13:25:01.222505+00:00 first-vm CRON[2210]: pam_unix(cron:session): session closed for user root
+2026-03-24T13:30:15.139239+00:00 first-vm sshd[2565]: Received disconnect from 35.235.244.32 port 35657:11:  [preauth]
+2026-03-24T13:30:15.139801+00:00 first-vm sshd[2565]: Disconnected from authenticating user gope_sujay357 35.235.244.32 port 35657 [preauth]
+2026-03-24T13:30:28.153403+00:00 first-vm sshd[2567]: Received disconnect from 35.235.244.32 port 35507:11:  [preauth]
+2026-03-24T13:30:28.153633+00:00 first-vm sshd[2567]: Disconnected from authenticating user gope_sujay357 35.235.244.32 port 35507 [preauth]
+2026-03-24T13:30:41.166597+00:00 first-vm sshd[2569]: Received disconnect from 35.235.244.32 port 37485:11:  [preauth]
+2026-03-24T13:30:41.167006+00:00 first-vm sshd[2569]: Disconnected from authenticating user gope_sujay357 35.235.244.32 port 37485 [preauth]
+2026-03-24T13:30:49.055317+00:00 first-vm gpasswd[2572]: user gope_sujay357 added by root to group google-sudoers
+2026-03-24T13:31:31.352237+00:00 first-vm sshd[2587]: Accepted publickey for gope_sujay357 from 35.235.244.32 port 35795 ssh2: ECDSA SHA256:oR6XsX4IrDSRKDY/2pFyEhD77hQ6tkp9TMBWlmljmJ8
+2026-03-24T13:31:31.355000+00:00 first-vm sshd[2587]: pam_unix(sshd:session): session opened for user gope_sujay357(uid=1001) by gope_sujay357(uid=0)
+2026-03-24T13:31:31.392414+00:00 first-vm systemd-logind[1067]: New session 3 of user gope_sujay357.
+2026-03-24T13:31:31.427800+00:00 first-vm (systemd): pam_unix(systemd-user:session): session opened for user gope_sujay357(uid=1001) by gope_sujay357(uid=0)
+2026-03-24T13:32:01.199127+00:00 first-vm sudo: gope_sujay357 : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/bin/bash
+2026-03-24T13:32:01.202653+00:00 first-vm sudo: pam_unix(sudo-i:session): session opened for user root(uid=0) by gope_sujay357(uid=1001)
+root@first-vm:/var/log# tail -f 50 auth.log
+tail: cannot open '50' for reading: No such file or directory
+==> auth.log <==
+2026-03-24T13:30:41.166597+00:00 first-vm sshd[2569]: Received disconnect from 35.235.244.32 port 37485:11:  [preauth]
+2026-03-24T13:30:41.167006+00:00 first-vm sshd[2569]: Disconnected from authenticating user gope_sujay357 35.235.244.32 port 37485 [preauth]
+2026-03-24T13:30:49.055317+00:00 first-vm gpasswd[2572]: user gope_sujay357 added by root to group google-sudoers
+2026-03-24T13:31:31.352237+00:00 first-vm sshd[2587]: Accepted publickey for gope_sujay357 from 35.235.244.32 port 35795 ssh2: ECDSA SHA256:oR6XsX4IrDSRKDY/2pFyEhD77hQ6tkp9TMBWlmljmJ8
+2026-03-24T13:31:31.355000+00:00 first-vm sshd[2587]: pam_unix(sshd:session): session opened for user gope_sujay357(uid=1001) by gope_sujay357(uid=0)
+2026-03-24T13:31:31.392414+00:00 first-vm systemd-logind[1067]: New session 3 of user gope_sujay357.
+2026-03-24T13:31:31.427800+00:00 first-vm (systemd): pam_unix(systemd-user:session): session opened for user gope_sujay357(uid=1001) by gope_sujay357(uid=0)
+2026-03-24T13:32:01.199127+00:00 first-vm sudo: gope_sujay357 : TTY=pts/0 ; PWD=/root ; USER=root ; COMMAND=/bin/bash
+2026-03-24T13:32:01.202653+00:00 first-vm sudo: pam_unix(sudo-i:session): session opened for user root(uid=0) by gope_sujay357(uid=1001)
+2026-03-24T13:33:55.380358+00:00 first-vm gpasswd[2765]: user gope_sujay357 removed by root from group google-sudoers
+^C
+root@first-vm:/var/log# tail -f 50 auth.log | grep error
+tail: cannot open '50' for reading: No such file or directory
+^Z
+[1]+  Stopped                 tail -f 50 auth.log | grep --color=auto error
+root@first-vm:/var/log# tail  50 auth.log | grep error
+tail: cannot open '50' for reading: No such file or directory
+root@first-vm:/var/log# cat  auth.log | grep error
+root@first-vm:/var/log# more  auth.log | grep error
+root@first-vm:/var/log# more  auth.log
+2026-03-24T13:16:36.612976+00:00 first-vm useradd[643]: new group: name=ubuntu, GI
+D=1000
+2026-03-24T13:16:36.612982+00:00 first-vm useradd[643]: new user: name=ubuntu, UID
+=1000, GID=1000, home=/home/ubuntu, shell=/bin/bash, from=none
+2026-03-24T13:16:36.612988+00:00 first-vm useradd[643]: add 'ubuntu' to group 'adm
+'
+2026-03-24T13:16:36.612993+00:00 first-vm useradd[643]: add 'ubuntu' to group 'cdr
+om'
+2026-03-24T13:16:36.612999+00:00 first-vm useradd[643]: add 'ubuntu' to group 'sud
+o'
+2026-03-24T13:16:36.613044+00:00 first-vm useradd[643]: add 'ubuntu' to group 'dip
+'
+2026-03-24T13:16:36.624425+00:00 first-vm useradd[643]: add 'ubuntu' to group 'lxd
+'
+2026-03-24T13:16:36.624438+00:00 first-vm useradd[643]: add 'ubuntu' to shadow gro
+up 'adm'
+2026-03-24T13:16:36.624445+00:00 first-vm useradd[643]: add 'ubuntu' to shadow gro
+up 'cdrom'
+2026-03-24T13:16:36.624451+00:00 first-vm useradd[643]: add 'ubuntu' to shadow gro
+up 'sudo'
+2026-03-24T13:16:36.624458+00:00 first-vm useradd[643]: add 'ubuntu' to shadow gro
+up 'dip'
+2026-03-24T13:16:36.624464+00:00 first-vm useradd[643]: add 'ubuntu' to shadow gro
+up 'lxd'
+2026-03-24T13:16:36.624487+00:00 first-vm passwd[651]: password for 'ubuntu' chang
+ed by 'root'
+2026-03-24T13:16:36.625562+00:00 first-vm systemd-logind[694]: Watching system but
+tons on /dev/input/event0 (Power Button)
+2026-03-24T13:16:36.625577+00:00 first-vm systemd-logind[694]: Watching system but
+tons on /dev/input/event1 (Sleep Button)
+2026-03-24T13:16:36.625583+00:00 first-vm systemd-logind[694]: Watching system but
+tons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-03-24T13:16:36.625596+00:00 first-vm systemd-logind[694]: New seat seat0.
+2026-03-24T13:16:42.702407+00:00 first-vm polkitd[972]: Loading rules from directo
+ry /etc/polkit-1/rules.d
+2026-03-24T13:16:42.706097+00:00 first-vm polkitd[972]: Loading rules from directo
+ry /usr/share/polkit-1/rules.d
+2026-03-24T13:16:42.713785+00:00 first-vm polkitd[972]: Finished loading, compilin
+g and executing 4 rules
+2026-03-24T13:16:42.715933+00:00 first-vm polkitd[972]: Acquired the name org.free
+desktop.PolicyKit1 on the system bus
+2026-03-24T13:16:43.103514+00:00 first-vm systemd-logind[1067]: Watching system bu
+ttons on /dev/input/event0 (Power Button)
+2026-03-24T13:16:43.103619+00:00 first-vm systemd-logind[1067]: Watching system bu
+ttons on /dev/input/event1 (Sleep Button)
+2026-03-24T13:16:43.103700+00:00 first-vm systemd-logind[1067]: Watching system bu
+ttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-03-24T13:16:43.103746+00:00 first-vm systemd-logind[1067]: New seat seat0.
+2026-03-24T13:16:43.285631+00:00 first-vm sshd[1083]: Server listening on 0.0.0.0 
+port 22.
+2026-03-24T13:16:43.286228+00:00 first-vm sshd[1083]: Server listening on :: port 
+22.
+2026-03-24T13:17:01.201268+00:00 first-vm CRON[1439]: pam_unix(cron:session): sess
+ion opened for user root(uid=0) by root(uid=0)
+2026-03-24T13:17:01.209003+00:00 first-vm CRON[1439]: pam_unix(cron:session): sess
+ion closed for user root
+2026-03-24T13:21:51.026293+00:00 first-vm groupadd[2099]: group added to /etc/grou
+p: name=google-sudoers, GID=1001
+2026-03-24T13:21:51.032957+00:00 first-vm groupadd[2099]: group added to /etc/gsha
+dow: name=google-sudoers
+2026-03-24T13:21:51.034765+00:00 first-vm groupadd[2099]: new group: name=google-s
+udoers, GID=1001
+2026-03-24T13:21:51.059513+00:00 first-vm useradd[2105]: new group: name=gope_suja
+y357, GID=1002
+2026-03-24T13:21:51.059728+00:00 first-vm useradd[2105]: new user: name=gope_sujay
+357, UID=1001, GID=1002, home=/home/gope_sujay357, shell=/bin/bash, from=none
+2026-03-24T13:21:51.125943+00:00 first-vm gpasswd[2113]: user gope_sujay357 added 
+by root to group ubuntu
+2026-03-24T13:21:51.151510+00:00 first-vm gpasswd[2119]: user gope_sujay357 added 
+by root to group adm
+2026-03-24T13:21:51.175952+00:00 first-vm gpasswd[2125]: user gope_sujay357 added 
+by root to group dialout
+2026-03-24T13:21:51.202241+00:00 first-vm gpasswd[2131]: user gope_sujay357 added 
+by root to group cdrom
+2026-03-24T13:21:51.225889+00:00 first-vm gpasswd[2137]: user gope_sujay357 added 
+by root to group floppy
+2026-03-24T13:21:51.252253+00:00 first-vm gpasswd[2143]: user gope_sujay357 added 
+by root to group audio
+2026-03-24T13:21:51.274229+00:00 first-vm gpasswd[2149]: user gope_sujay357 added 
+by root to group dip
+2026-03-24T13:21:51.295530+00:00 first-vm gpasswd[2155]: user gope_sujay357 added 
+by root to group video
+2026-03-24T13:21:51.316980+00:00 first-vm gpasswd[2161]: user gope_sujay357 added 
+by root to group plugdev
+2026-03-24T13:21:51.343155+00:00 first-vm gpasswd[2167]: user gope_sujay357 added 
+by root to group netdev
+2026-03-24T13:21:51.365242+00:00 first-vm gpasswd[2173]: user gope_sujay357 added 
+by root to group lxd
+2026-03-24T13:21:51.387142+00:00 first-vm gpasswd[2179]: user gope_sujay357 added 
+by root to group google-sudoers
+2026-03-24T13:24:57.363202+00:00 first-vm gpasswd[2200]: user gope_sujay357 remove
+d by root from group google-sudoers
+2026-03-24T13:25:01.215944+00:00 first-vm CRON[2210]: pam_unix(cron:session): sess
+ion opened for user root(uid=0) by root(uid=0)
+2026-03-24T13:25:01.222505+00:00 first-vm CRON[2210]: pam_unix(cron:session): sess
+ion closed for user root
+2026-03-24T13:30:15.139239+00:00 first-vm sshd[2565]: Received disconnect from 35.
+235.244.32 port 35657:11:  [preauth]
+2026-03-24T13:30:15.139801+00:00 first-vm sshd[2565]: Disconnected from authentica
+ting user gope_sujay357 35.235.244.32 port 35657 [preauth]
+2026-03-24T13:30:28.153403+00:00 first-vm sshd[2567]: Received disconnect from 35.
+235.244.32 port 35507:11:  [preauth]
+2026-03-24T13:30:28.153633+00:00 first-vm sshd[2567]: Disconnected from authentica
+ting user gope_sujay357 35.235.244.32 port 35507 [preauth]
+2026-03-24T13:30:41.166597+00:00 first-vm sshd[2569]: Received disconnect from 35.
+235.244.32 port 37485:11:  [preauth]
+2026-03-24T13:30:41.167006+00:00 first-vm sshd[2569]: Disconnected from authentica
+ting user gope_sujay357 35.235.244.32 port 37485 [preauth]
+2026-03-24T13:30:49.055317+00:00 first-vm gpasswd[2572]: user gope_sujay357 added 
+by root to group google-sudoers
+2026-03-24T13:31:31.352237+00:00 first-vm sshd[2587]: Accepted publickey for gope_
+sujay357 from 35.235.244.32 port 35795 ssh2: ECDSA SHA256:oR6XsX4IrDSRKDY/2pFyEhD7
+7hQ6tkp9TMBWlmljmJ8
+2026-03-24T13:31:31.355000+00:00 first-vm sshd[2587]: pam_unix(sshd:session): sess
+ion opened for user gope_sujay357(uid=1001) by gope_sujay357(uid=0)
+2026-03-24T13:31:31.392414+00:00 first-vm systemd-logind[1067]: New session 3 of u
+ser gope_sujay357.
+2026-03-24T13:31:31.427800+00:00 first-vm (systemd): pam_unix(systemd-user:session
+): session opened for user gope_sujay357(uid=1001) by gope_sujay357(uid=0)
+2026-03-24T13:32:01.199127+00:00 first-vm sudo: gope_sujay357 : TTY=pts/0 ; PWD=/r
+oot ; USER=root ; COMMAND=/bin/bash
+2026-03-24T13:32:01.202653+00:00 first-vm sudo: pam_unix(sudo-i:session): session 
+opened for user root(uid=0) by gope_sujay357(uid=1001)
+2026-03-24T13:33:55.380358+00:00 first-vm gpasswd[2765]: user gope_sujay357 remove
+d by root from group google-sudoers
+2026-03-24T13:35:01.231541+00:00 first-vm CRON[2784]: pam_unix(cron:session): sess
+ion opened for user root(uid=0) by root(uid=0)
+2026-03-24T13:35:01.235428+00:00 first-vm CRON[2784]: pam_unix(cron:session): sess
+ion closed for user root
+root@first-vm:/var/log# 
+root@first-vm:/var/log#     history
+    1  ls
+    2  cd ..
+    3  ls
+    4  cd /
+    5  cd /var
+    6  pwd
+    7  ls
+    8  cd log
+    9  ls
+   10  cd auth.log
+   11  cat auth.log
+   12  tail -f 50 auth.log
+   13  tail -f 50 auth.log | grep error
+   14  tail  50 auth.log | grep error
+   15  cat  auth.log | grep error
+   16  more  auth.log | grep error
+   17  more  auth.log
+root@first-vm:/var/log# cd
+root@first-vm:~# ssh-keygen
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (/root/.ssh/id_ed25519): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /root/.ssh/id_ed25519
+Your public key has been saved in /root/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:O99aWT6HVWH4VHf80EXNbUaHHBHdtokZ5WbRZyaM804 root@first-vm.us-central1-c.c.project-96ed0b50-3108-4f9b-9bf.internal
+The key's randomart image is:
++--[ED25519 256]--+
+|             +*^/|
+|            ooO.^|
+|             o*%*|
+|             oE+o|
+|        S    o. .|
+|         .   +.o |
+|        o   o + .|
+|         o o   o |
+|          o..    |
++----[SHA256]-----+
+root@first-vm:~# ls
+root@first-vm:~# cd /root/.ssh/
+root@first-vm:~/.ssh# ls
+authorized_keys  id_ed25519  id_ed25519.pub
+root@first-vm:~/.ssh# cat id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK0opoXvR0ds7QEJcfMX0xGGY8lipQhcAeZObuVEdpMO root@first-vm.us-central1-c.c.project-96ed0b50-3108-4f9b-9bf.internal
+root@first-vm:~/.ssh# pwd
+/root/.ssh
+root@first-vm:~/.ssh# cd ~
+root@first-vm:~# pwd
+/root
+root@first-vm:~# cd
+root@first-vm:~# mkdir fol
+root@first-vm:~# ls
+fol
+root@first-vm:~# touch raju
+root@first-vm:~# ls
+fol  raju
+root@first-vm:~# cat raji
+cat: raji: No such file or directory
+root@first-vm:~# cat raju
+root@first-vm:~# cp raju suraj
+root@first-vm:~# ls
+fol  raju  suraj
+root@first-vm:~# vi suraj
+root@first-vm:~# cat suraj
+I am suraj
+root@first-vm:~# mv suraj rahul
+root@first-vm:~# cat rahul
+I am suraj
+root@first-vm:~# hostname
+first-vm.us-central1-c.c.project-96ed0b50-3108-4f9b-9bf.internal
+root@first-vm:~# hostname -i
+10.128.0.38
+root@first-vm:~# curl ifconfig.me
+34.171.9.1root@first-vm:~# uname
+Linux
+root@first-vm:~# uname -a
+Linux first-vm.us-central1-c.c.project-96ed0b50-3108-4f9b-9bf.internal 6.17.0-1009-gcp #9~24.04.3-Ubuntu SMP Sat Mar  7 00:58:37 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+root@first-vm:~# ls
+fol  rahul  raju
+root@first-vm:~# la
+.bashrc  .profile  .ssh  .viminfo  fol  rahul  raju
+root@first-vm:~# ls
+fol  rahul  raju
+root@first-vm:~# rm rahul 
+root@first-vm:~# ls
+fol  raju
+root@first-vm:~# echo "Hello world"
+Hello world
+root@first-vm:~# echo Hello world
+Hello world
+root@first-vm:~# man history -i
+No manual entry for -i
+root@first-vm:~# w
+ 13:40:11 up 23 min,  1 user,  load average: 0.00, 0.03, 0.02
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU  WHAT
+gope_suj          35.235.244.32    13:31   22:49   0.00s  0.02s sshd: gope_sujay3
+root@first-vm:~# who
+gope_sujay357 pts/0        2026-03-24 13:31 (35.235.244.32)
+gope_sujay357 pts/1        2026-03-24 13:32 (35.235.244.32)
+root@first-vm:~# whoami
+root
+root@first-vm:~# free 
+               total        used        free      shared  buff/cache   available
+Mem:         4004272      529832     2788632        1036      919640     3474440
+Swap:              0           0           0
+root@first-vm:~# free -g
+               total        used        free      shared  buff/cache   available
+Mem:               3           0           2           0           0           3
+Swap:              0           0           0
+root@first-vm:~# free -m
+               total        used        free      shared  buff/cache   available
+Mem:            3910         517        2723           1         898        3393
+Swap:              0           0           0
+root@first-vm:~# free -h
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       517Mi       2.7Gi       1.0Mi       898Mi       3.3Gi
+Swap:             0B          0B          0B
+root@first-vm:~# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root       8.7G  3.0G  5.7G  35% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           783M  1.0M  782M   1% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+efivarfs        256K   32K  220K  13% /sys/firmware/efi/efivars
+/dev/sda16      881M   66M  754M   9% /boot
+/dev/sda15      105M  6.2M   99M   6% /boot/efi
+tmpfs           392M   12K  392M   1% /run/user/1001
+root@first-vm:~# df
+Filesystem     1K-blocks    Used Available Use% Mounted on
+/dev/root        9065864 3096264   5953216  35% /
+tmpfs            2002136       0   2002136   0% /dev/shm
+tmpfs             800856    1024    799832   1% /run
+tmpfs               5120       0      5120   0% /run/lock
+efivarfs             256      32       220  13% /sys/firmware/efi/efivars
+/dev/sda16        901520   67240    771152   9% /boot
+/dev/sda15        106832    6250    100582   6% /boot/efi
+tmpfs             400424      12    400412   1% /run/user/1001
+root@first-vm:~# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root       8.7G  3.0G  5.7G  35% /
+tmpfs           2.0G     0  2.0G   0% /dev/shm
+tmpfs           783M  1.0M  782M   1% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+efivarfs        256K   32K  220K  13% /sys/firmware/efi/efivars
+/dev/sda16      881M   66M  754M   9% /boot
+/dev/sda15      105M  6.2M   99M   6% /boot/efi
+tmpfs           392M   12K  392M   1% /run/user/1001
+root@first-vm:~# History
+History: command not found
+root@first-vm:~# history
+    1  ls
+    2  cd ..
+    3  ls
+    4  cd /
+    5  cd /var
+    6  pwd
+    7  ls
+    8  cd log
+    9  ls
+   10  cd auth.log
+   11  cat auth.log
+   12  tail -f 50 auth.log
+   13  tail -f 50 auth.log | grep error
+   14  tail  50 auth.log | grep error
+   15  cat  auth.log | grep error
+   16  more  auth.log | grep error
+   17  more  auth.log
+   18  cd
+   19  ssh-keygen
+   20  ls
+   21  cd /root/.ssh/
+   22  ls
+   23  cat id_ed25519.pub
+   24  pwd
+   25  cd ~
+   26  pwd
+   27  cd
+   28  mkdir fol
+   29  ls
+   30  touch raju
+   31  ls
+   32  cat raji
+   33  cat raju
+   34  cp raju suraj
+   35  ls
+   36  vi suraj
+   37  cat suraj
+   38  mv suraj rahul
+   39  cat rahul
+   40  hostname
+   41  hostname -i
+   42  curl ifconfig.me
+   43  uname
+   44  uname -a
+   45  ls
+   46  la
+   47  ls
+   48  rm rahul 
+   49  ls
+   50  echo "Hello world"
+   51  echo Hello world
+   52  man history -i
+   53  w
+   54  who
+   55  whoami
+   56  free 
+   57  free -g
+   58  free -m
+   59  free -h
+   60  df -h
+   61  df
+   62  df -h
+   63  History
+   64  history
+root@first-vm:~# 
